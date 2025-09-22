@@ -1,5 +1,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+:root{
+  --maroon-clr: rgb(56, 6, 43);
+  --dark-clr:rgb(13, 0, 31);
+  --white-clr:rgb(245, 245, 245)
+}
 
 *{
   font-family: "Oswald", sans-serif;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: var(--dark-clr);
+  color: var(--white-clr);
+  text-decoration: none;
+  
+  
+}
+header{
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.logo{
+  width:  1em; 
+  height: 1em;
+}
+.nav-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  text-decoration: none;
+}
+.nav-tags>a{
+  font-size: 1.5rem;
+}
+.hero-section{
+  text-align: center;
+}
+#name{
+  font-size: 3rem;
+}
+.js-typewritter{
+  font-size: 3.5rem;
+  color: var(--maroon-clr);
+}
+.hero-section-socials>a>img{
+  margin: 16px;
+}
+h2{
+  font-size: 2rem;
+
+}
+h4{
+  font-weight: lighter ;
+}
+.about-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  
+  margin-top: 40px;
+  margin-bottom: 120px;
+  
+}
+.about-section-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.2em 2em;
+  border: solid 2px var(--maroon-clr);
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: lighter;
+  
+}
+.about-section-button:hover,
+.about-section-button:active,
+.footer-cta-btn:hover,
+.footer-cta-btn:active{
+  background: var(--maroon-clr);
+  border: none;
+}
+.about-section img{
+  background: none;
+}
+.techstack-section{
+  margin-top: 40px;
+  margin-bottom: 120px;
+  
+}
+.techstack-section>div{
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+  
+}.techstack-section-img{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+.techstack-section-img>span{
+  font-weight: lighter;
+}
+.projects-section{
+  margin-bottom: 120px;
+}
+.projects-section>div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+.footer-cta{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+.footer-cta p,
+button{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.footer-cta-btn{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding-left: 0.2em 2em;
+  border: solid 2px var(--maroon-clr);
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 120px;
+}
+.credits{
+  font-size: 1rem;
+  font-weight: lighter;
 }
