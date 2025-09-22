@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-:root{
+
+:root {
   --maroon-clr: rgb(56, 6, 43);
-  --dark-clr:rgb(13, 0, 31);
-  --white-clr:rgb(245, 245, 245)
+  --dark-clr: rgb(13, 0, 31);
+  --white-clr: rgb(245, 245, 245)
 }
 
-*{
+* {
   font-family: "Oswald", sans-serif;
   line-height: 1.5;
   font-size: 1.5rem;
@@ -14,70 +15,86 @@
   background-color: var(--dark-clr);
   color: var(--white-clr);
   text-decoration: none;
-  
+
 }
-.container{
+
+.container {
   width: 80vw;
 }
-header{
+
+header {
   margin-top: 40px;
   margin-bottom: 120px;
 }
-nav{
+
+nav {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
 }
-.logo{
-  width:  1em; 
+
+.logo {
+  width: 1em;
   height: 1em;
 }
+
 .nav-tags {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2em;
   text-decoration: none;
- 
+
 }
-.nav-tags>a{
+
+.nav-tags>a {
   font-size: 1.5rem;
-   transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out;
 }
-.nav-tags>a:hover{
+
+.nav-tags>a:hover {
   color: var(--maroon-clr);
 }
-.hero-section{
+
+.hero-section {
   text-align: center;
 }
-#name{
+
+#name {
   font-size: 3rem;
 }
-.js-typewritter{
+
+.js-typewritter {
   font-size: 3.5rem;
   color: var(--maroon-clr);
 }
-.hero-section-socials>a>img{
+
+.hero-section-socials>a>img {
   margin: 16px;
 }
-h2{
+
+h2 {
   font-size: 2rem;
+  padding: 32px;
 
 }
-h4{
-  font-weight: lighter ;
+
+h4 {
+  font-weight: lighter;
 }
-.about-section{
+
+.about-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  
+
   margin-top: 40px;
   margin-bottom: 120px;
-  
+
 }
-.about-section-button{
+
+.about-section-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,63 +105,75 @@ h4{
   font-size: 1rem;
   font-weight: lighter;
   transition: back-ground color .4s ease-in-out;
-  
+
 }
+
 .about-section-button:hover,
 .about-section-button:active,
 .footer-cta-btn:hover,
-.footer-cta-btn:active{
+.footer-cta-btn:active {
   background-color: var(--maroon-clr);
   border: none;
 }
-.about-section img{
+
+.about-section img {
   background: none;
 }
-.techstack-section{
+
+.techstack-section {
   margin-top: 40px;
   margin-bottom: 120px;
-  
+
 }
-.techstack-section>div{
+
+.techstack-section>div {
   display: grid;
   grid-template-columns: 25% 1fr;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  
-}.techstack-section-img{
+
+}
+
+.techstack-section-img {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 0.5em;
 }
-.techstack-section-img>span{
+
+.techstack-section-img>span {
   font-weight: lighter;
 }
-.projects-section{
+
+.projects-section {
   margin-bottom: 120px;
 }
-.projects-section>div{
+
+.projects-section>div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 40px;
 }
-.footer-cta{
-   display: flex;
+
+.footer-cta {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  
+
 }
+
 .footer-cta p,
-button{
+button {
   margin-top: 40px;
   margin-bottom: 40px;
   text-align: center;
 }
-.footer-cta-btn{
+
+.footer-cta-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,10 +186,77 @@ button{
   margin-bottom: 120px;
   transition: back-ground color .4s ease-in-out;
 }
-.footer-cta-btn>img{
+
+.footer-cta-btn>img {
   padding-top: 5px;
 }
-.credits{
+
+.credits {
   font-size: 1rem;
   font-weight: lighter;
+}
+@media (width< 600px) {
+  .techstack-section-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width < 900px) {
+  * {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-section-text>p{
+    font-size: 1.5rem;
+  }
+
+  .techstack-section>div,
+  .projects-section>div {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 32px;
+    font-weight: normal;
+  }
+
+}
+
+@media (width < 1020px) {
+
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .techstack-section>div{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+
+  }
+  h2{
+    text-align: center;
+  }
+  h4{
+    font-weight: normal;
+  }
 }
