@@ -6,6 +6,62 @@
   --white-clr: rgb(245, 245, 245)
 }
 
+.container-loader {
+  background-color: var(--dark-clr);
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: grid;
+  place-content: center;
+
+}
+
+svg {
+  width: 20rem;
+  font-weight: 350;
+
+}
+
+svg text {
+  font-size: 5rem;
+  stroke-width: 2;
+  letter-spacing: -6px;
+
+}
+
+.text-body {
+  stroke: var(--white-clr);
+  animation: 4s infinite alternate animate-stroke;
+}
+
+@keyframes animate-stroke {
+  0% {
+    fill: transparent;
+    stroke: var(--white-clr);
+    stroke-width: 3;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 32%;
+  }
+
+  50% {
+    fill: transparent;
+    stroke: var(--white-clr);
+    stroke-width: 3;
+  }
+  80%,
+  100% {
+    fill: var(--white-clr);
+    stroke: transparent;
+    stroke-width: 0;
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 32% 0;
+  }
+}
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
 * {
   font-family: "Oswald", sans-serif;
   line-height: 1.5;
@@ -23,7 +79,7 @@
 }
 
 header {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 120px;
 }
 
@@ -65,7 +121,8 @@ nav {
   font-size: 3rem;
 }
 
-.js-typewritter {
+.js-typewritter,
+.cursor {
   font-size: 3.5rem;
   color: var(--maroon-clr);
 }
@@ -195,8 +252,9 @@ button {
   font-size: 1rem;
   font-weight: lighter;
 }
+
 @media (width< 600px) {
-  .techstack-section-img{
+  .techstack-section-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -214,7 +272,8 @@ button {
     align-items: center;
     justify-content: center;
   }
-  .about-section-text>p{
+
+  .about-section-text>p {
     font-size: 1.5rem;
   }
 
@@ -246,17 +305,20 @@ button {
     justify-content: center;
     text-align: center;
   }
-  .techstack-section>div{
+
+  .techstack-section>div {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
 
   }
-  h2{
+
+  h2 {
     text-align: center;
   }
-  h4{
+
+  h4 {
     font-weight: normal;
   }
 }

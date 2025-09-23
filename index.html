@@ -10,9 +10,17 @@
 
 <body>
   <div class="container">
+    <div class="container-loader">
+      <svg viewbox="0 0 400 160">
+        <text x="50%" y="50%" dy=".32em" text-archor="middle" class="text-body">tuttie
+        </text>
+        <text x="50%" y="50%" dx="1.5em" dy=".32em" text-archor="middle" class="text-body">.
+        </text>
+      </svg>
+    </div>
     <header>
       <nav>
-        <a href="#"><img src="images/Vector (2).svg" alt="logo" class="logo"></a>
+        <a href="#"><img src="images/Group 7 (2).svg" alt="logo" class="logo" ></a>
         <div class="nav-tags">
           <a href="#about">About</a>
           <a href="#Projects">Projects</a>
@@ -21,10 +29,11 @@
       </nav>
       <div class="hero-section">
         <p>Hi, i am <span id="name">ruth.</span></p>
-        <p class="js-typewritter">UI/UX</p>
+        <span class="js-typewritter"> </span><span class="cursor">|</span>
         <div class="hero-section-socials">
           <a href=""><img src="images/skill-icons_linkedin.png" alt="linkedin"></a>
-          <a href="https://github.com/Ruth-tuttie" target="_blank"><img src="images/devicon_github.png" alt="github"></a>
+          <a href="https://github.com/Ruth-tuttie" target="_blank"><img src="images/devicon_github.png"
+              alt="github"></a>
         </div>
       </div>
 
@@ -94,7 +103,9 @@
         </div>
         <div>
           <h4>Fleet</h4>
-          <img src="images/fleet.png" alt="" width="auto" height="344px">
+          <div><img src="images/fleet.png" alt="" width="auto" height="344px">
+          </div>
+          
         </div>
 
         <div>
@@ -131,9 +142,13 @@
       </div>
     </footer>
   </div>
+  <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
 
-
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
   <script src="main.js"></script>
+  <script src="header.js"></script>
+  <script src="scroll.js"></script>
 </body>
 
 </html>
