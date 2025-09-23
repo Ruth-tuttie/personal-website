@@ -201,8 +201,12 @@ h4 {
 
 .techstack-section-img>span {
   font-weight: lighter;
+  font-size: 1rem;
 }
-
+.techstack-section-img img{
+  width: 64px;
+  height: 64px ;
+}
 .projects-section {
   margin-bottom: 120px;
 }

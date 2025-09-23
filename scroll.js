@@ -14,9 +14,7 @@ gsap.ticker.add((time) => {
 gsap.ticker.lagSmoothing(0);
 
 
-const techstack= document.querySelector('.techstack-section')
-const about = document.querySelector('.about-section')
-const projects = document.querySelector('.projects-section')
+
 const h4= document.querySelectorAll('h4')
 let images = document.querySelectorAll('.js-image')
 
@@ -37,6 +35,7 @@ gsap.to(image,{
   xPercent: 0,
   opacity: 1,
 })*/
+
 let timeLine = gsap.timeline({
   scrollTrigger:{
     trigger: image,
@@ -61,7 +60,7 @@ let timeLine = gsap.timeline({
   }
 })
 
- timeLine.fromTo(h4,{xPercent: -100, opacity:0},{xPercent: 0, opacity:1})
+ timeLine.fromTo(h4,{xPercent: -100, opacity:0},{xPercent: 0, opacity:1},'<')
   })
 
 
