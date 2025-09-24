@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 :root {
-  --maroon-clr: rgb(56, 6, 43);
+  --maroon-clr: rgb(56, 5, 42);
   --dark-clr: rgb(13, 0, 31);
-  --white-clr: rgb(245, 245, 245)
+  --white-clr: rgb(245, 245, 245);
+  --light-clr: rgb(248, 228, 195);
 }
 
 .container-loader {
@@ -76,6 +77,8 @@ svg text {
 
 .container {
   width: 80vw;
+  overflow-x: hidden;
+ 
 }
 
 header {

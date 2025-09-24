@@ -1,4 +1,4 @@
-const words = ['UI/UX Designer', 'Web Designer', 'Web Developer']
+const words = ['UI/UX Designer', 'Web Developer']
 
 //main timeline
 
