@@ -133,7 +133,9 @@ nav {
 .hero-section-socials>a>img {
   margin: 16px;
 }
-
+.hero-section-socials img:hover{
+background-color: var(--white-clr);
+}
 h2 {
   font-size: 2rem;
   padding: 32px;
@@ -272,6 +274,9 @@ button {
 .socials{
   text-align: center;
 }
+.socials img:hover{
+background-color: var(--white-clr);
+}
 
 .credits {
   font-size: 1rem;
@@ -281,7 +286,7 @@ button {
 @media (width< 600px) {
   .techstack-section-img {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
