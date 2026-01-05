@@ -20,6 +20,8 @@ first i designed the website in figma, then CSS,HTML,JS.
 Finally i used GSAP animation library for animation using gsap hooks from,to,scrolltrigger.
 
 WHAT I LEARNED.
-GSAP scrolltrigger
-GSAP timeline
-GSAP from
+gsap scrollTrigger
+gsap timeline
+gsap  from
+gsap to
+gsap fromTo
